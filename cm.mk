@@ -2,10 +2,7 @@
 $(call inherit-product, device/nvidia/wx_na_do/full_wx_na_do.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
-
-# Inherit telephony stuff
-$(call inherit-product, vendor/cm/config/telephony.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=wx_na_do \

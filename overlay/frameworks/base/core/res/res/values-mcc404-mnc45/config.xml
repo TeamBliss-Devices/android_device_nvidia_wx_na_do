@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2009, The Android Open Source Project
+** Copyright 2013, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -18,14 +18,9 @@
 -->
 
 <resources>
-
-    <!-- This device is not "voice capable." -->
-    <bool name="config_voice_capable">false</bool>
-
-    <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">Shield Tablet</string>
-
-    <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url" translatable="false">http://www.nvidia.com</string>
-
+    <!-- Show roaming icon though same named operators. -->
+    <string-array translatable="false" name="config_sameNamedOperatorConsideredRoaming">
+        <item>40427</item>
+        <item>40490</item>
+    </string-array>
 </resources>
