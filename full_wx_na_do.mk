@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/nvidia/wx_na_do/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_wx_na_do
+PRODUCT_NAME := bliss_wx_na_do
 PRODUCT_DEVICE := wx_na_do
 PRODUCT_BRAND := nvidia
 PRODUCT_MANUFACTURER := NVIDIA
