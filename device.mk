@@ -40,22 +40,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modem.do=1 \
     ril.icera-config-args=notifier:ON,datastall:ON,lwaactivate
 
-#SELinux
-BOARD_SEPOLICY_DIRS += device/nvidia/wx_na_do/sepolicy/
-BOARD_SEPOLICY_UNION += \
-	agpsd.te \
-	fild.te \
-	file_contexts \
-	file.te \
-	gpsd.te \
-	icera-crashlogs.te \
-	icera-feedback.te \
-	icera-loader.te \
-	icera-switcherd.te \
-	init.te \
-	mediaserver.te \
-	mock_modem.te \
-	system_app.te
-
 # Inherit from shieldtablet
 $(call inherit-product, device/nvidia/shieldtablet/shieldtablet.mk)
